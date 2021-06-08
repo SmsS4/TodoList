@@ -74,7 +74,7 @@ class Manager{
         self.todoList[idx].title = newTodo.title
         self.todoList[idx].content = newTodo.content
         self.todoList[idx].priority = newTodo.priority
-        self.todoList[idx] = newTodo;
+        // self.todoList[idx] = newTodo;
     }
 
     func deleteTodo(index: Int) {
