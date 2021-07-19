@@ -14,7 +14,7 @@ rm all.swift
 
 ## Comamnds
 
-### help
+### ``help``
 Show list of comamnds
 ```
 Available commands:
@@ -29,7 +29,7 @@ Available commands:
         exit: Exit
 ```
 
-### create todo
+### ``create todo``
 Create a new todo  
 after that programm ask you for Title, Priority, Desceription.
 ```
@@ -43,7 +43,7 @@ rr
 New item added successfully
 ```
 
-### list [<group>]
+### ``list [<group>]``
 List available todos.  
 group is optional.  
 first coloum is id of todo, second is priority, third is Title and last coloum is description.
@@ -52,7 +52,7 @@ first coloum is id of todo, second is priority, third is Title and last coloum i
 0 - 4 - Test : rr
 ```
 
-### edit <todo-id>
+### ``edit <todo-id>``
 Edit todo  
 ```
 > edit 0
@@ -65,13 +65,13 @@ new desc
 Todo edited successfully
 ```
 
-### delete <todo-id>
+### ``delete <todo-id>``
 Delete todo
 ```
 > delete 0
 Todo deleted successfully
 ```
-### sort by title/creation/priority az/za
+### ``sort by title/creation/priority az/za``
 Sort todos.  
 you have to call list for showing todos.  
 creation is for sorting by create time.  
@@ -89,14 +89,14 @@ and az/za specify thay sorting should be increasing or decreasing.
 0 - 1 - t1 : d1
 1 - 2 - t2 : d2
 ```
-### create group <name>
+### ``create group <name>``
 Create a new group.
 Note: name can't have space
 ```
 > create group name_of_group
 Group created successfully
 ```
-### add <group> <todo-id> [<todo-id> ...]
+### ``add <group> <todo-id> [<todo-id> ...]``
 Add todos to group
 ```
 > add name_of_group 2 3
@@ -104,12 +104,12 @@ Items added to group successfully
 > add name_of_group 4
 Items added to group successfully
 ```
-### glist
+### ``glist``
 Show list groups
 ```
 > glist
 List of groups:
 name_of_group
 ```
-### exit
+### ``exit``
 Exits programm.
